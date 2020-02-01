@@ -26,6 +26,9 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.1",
     "nodemon": "^2.0.2"
   }
 }
