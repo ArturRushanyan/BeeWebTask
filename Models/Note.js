@@ -6,7 +6,7 @@ const NoteSchema = new Schema({
     note: { type: String, required: true },
     createdAt: { type : Date, default: Date.now },
     lastUpdatedAt: { type: Date, default: Date.now },
-    deletedAt: { type: Date }
+    deletedAt: { type: Date, default: '' }
 });
 
 let Note = null;
