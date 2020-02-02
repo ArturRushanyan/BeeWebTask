@@ -72,7 +72,7 @@ exports.update = (req, res) => {
         note: req.body.note,
         lastUpdatedAt: currentDate
     };
-    const deletedAt = new Date(req.body.deletedAt);
+    const deletedAt = req.body.deletedAt;
     if (deletedAt) {
         newNoteData.deletedAt = deletedAt;
         if (deletedAt.getTime() > currentDate.getTime()) {
