@@ -7,10 +7,8 @@ const router = express.Router();
 
 router.get('/', noteController.getAll);
 router.get('/:id', noteController.getById);
-router.post('/', noteController.create);
-router.put('/:id', noteController.update);
-router.delete('/:id',  noteController.delete);
-
-// IsAuthenticated
+router.post('/', IsAuthenticated, noteController.create);
+router.put('/:id', IsAuthenticated, noteController.update);
+router.delete('/:id', IsAuthenticated, noteController.delete);
 
 export default router;
